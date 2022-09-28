@@ -13,4 +13,11 @@ function updateInfo() {
     job.innerHTML = jobInput.value;
     dob.innerHTML = dobInput.value;
     userLocation.innerHTML = locationInput.value;
+
+    const dateIndex = new Date(dobInput.value).getDay() +1;
+    userImage.scr = 'img/man-' + dateIndex + '.png';
+    nameInput.value = '';
+    jobInput.value = '';
+    locationInput.value = '';
+    dobInput.value = '';
 }
